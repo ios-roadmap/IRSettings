@@ -2,7 +2,7 @@
 //  IRSettingsDemoApp.swift
 //  IRSettingsDemo
 //
-//  Created by Ömer Faruk Öztürk on 5.05.2025.
+//  Created by Ömer Faruk Öztürk on 6.05.2025.
 //
 
 import SwiftUI

@@ -5,18 +5,26 @@ import PackageDescription
 
 let package = Package(
     name: "IRSettings",
-    platforms: [.iOS(.v18)],
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v18)
+    ],
     products: [
         .library(
             name: "IRSettings",
-            targets: ["IRSettings"]
-        ),
+            targets: ["IRSettings"]),
+    ],
+    dependencies: [
+        .package(name: "IRSettingsInterface", path: "IRSettingsInterface")
     ],
     targets: [
         .target(
             name: "IRSettings",
-            dependencies: []
-        )
+            dependencies: [
+                "IRSettingsInterface"
+            ],
+            path: "IRSettings"
+        ),
+
     ]
 )
-
