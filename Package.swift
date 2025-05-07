@@ -16,6 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "IRSettingsInterface", path: "IRSettingsInterface")
+        
     ],
     targets: [
         .target(
